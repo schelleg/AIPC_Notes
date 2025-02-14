@@ -2,7 +2,7 @@
 
 ## From Clean Ubuntu 24.04 Image on STX MiniForums AI PC
 
-###PyTorch Dockers
+### PyTorch Dockers
 ```bash
 sudo apt install docker.io
 docker pull rocm/pytorch:latest
