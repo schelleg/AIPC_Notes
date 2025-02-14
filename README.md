@@ -41,3 +41,20 @@ ii  libglx-mesa0:amd64                            24.0.9-0ubuntu0.1             
 ii  mesa-vulkan-drivers:amd64                     24.0.9-0ubuntu0.1                        amd64        Mesa Vulkan graphics drivers
 ii  xserver-xorg-video-amdgpu                     23.0.0-1build1                           amd64        X.Org X server -- AMDGPU display driver
 ```
+
+### LSMOD
+```bash
+grahams@grahams-EliteMini-Series:~/Desktop$ lsmod | grep -E "amdgpu|rocm|mesa"
+amdgpu              19992576  6
+amdxcp                 12288  1 amdgpu
+drm_exec               12288  1 amdgpu
+gpu_sched              61440  1 amdgpu
+drm_buddy              24576  1 amdgpu
+drm_suballoc_helper    20480  1 amdgpu
+drm_ttm_helper         16384  1 amdgpu
+ttm                   110592  2 amdgpu,drm_ttm_helper
+drm_display_helper    278528  1 amdgpu
+i2c_algo_bit           16384  1 amdgpu
+video                  77824  1 amdgpu
+```
+
