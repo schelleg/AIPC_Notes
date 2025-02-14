@@ -28,3 +28,16 @@ rocm-device-libs-17/noble 6.0+git20231212.5a852ed-2 amd64
 rocm-smi/noble 5.7.0-1 amd64
 rocminfo/noble 5.7.1-3build1 amd64
 ```
+
+### DPKG with AMD
+```bash
+grahams@grahams-EliteMini-Series:~/Desktop$ dpkg -l | grep -E "amdgpu|rocm|mesa"
+ii  libdrm-amdgpu1:amd64                          2.4.120-2build1                          amd64        Userspace interface to amdgpu-specific kernel DRM services -- runtime
+ii  libegl-mesa0:amd64                            24.0.9-0ubuntu0.1                        amd64        free implementation of the EGL API -- Mesa vendor library
+ii  libgl1-mesa-dri:amd64                         24.0.9-0ubuntu0.1                        amd64        free implementation of the OpenGL API -- DRI modules
+ii  libglapi-mesa:amd64                           24.0.9-0ubuntu0.1                        amd64        free implementation of the GL API -- shared library
+ii  libglu1-mesa:amd64                            9.0.2-1.1build1                          amd64        Mesa OpenGL utility library (GLU)
+ii  libglx-mesa0:amd64                            24.0.9-0ubuntu0.1                        amd64        free implementation of the OpenGL API -- GLX vendor library
+ii  mesa-vulkan-drivers:amd64                     24.0.9-0ubuntu0.1                        amd64        Mesa Vulkan graphics drivers
+ii  xserver-xorg-video-amdgpu                     23.0.0-1build1                           amd64        X.Org X server -- AMDGPU display driver
+```
