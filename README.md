@@ -1,6 +1,7 @@
 # AIPC_Notes
 
 ## From Clean Ubuntu 24.04 Image on STX MiniForums AI PC
+NOTES : Did not select to install proprietary drivers
 
 ### PyTorch Dockers
 ```bash
