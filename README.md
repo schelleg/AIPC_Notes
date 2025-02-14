@@ -74,3 +74,13 @@ i2c_algo_bit           16384  1 amdgpu
 video                  77824  1 amdgpu
 ```
 
+### PyTorch/ROCm
+
+Use HIP test
+https://github.com/AMDResearch/introduction_to_hip/tree/master/examples/01_vector_addition 
+```bash
+
+
+
+
+```
