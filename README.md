@@ -1,7 +1,20 @@
 # AIPC_Notes
 
 ## From Clean Ubuntu 24.04 Image on STX MiniForums AI PC
-NOTES : Did not select to install proprietary drivers
+Setup Notes
+- Ubuntu 24.04, STX
+- did not select to install proprietary drivers
+
+Test Notes
+- Reboot success (from clean image)?
+- Reboot success (after package installs)?
+- ROCm docker success?
+- amdgpu-dkms install success?  N/A
+- 
+
+Summary Notes
+- host seen with "free" drivers
+- ROCm docker takes forever to download (even on wired link)
 
 ### PyTorch Dockers
 ```bash
