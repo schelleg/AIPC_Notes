@@ -1,0 +1,98 @@
+    4  git clone https://github.com/AMDResearch/introduction_to_hip
+    5  cd introduction_to_hip/examples/01_vector_addition/
+    6  vi Makefile 
+    7  make
+    8  ./vector_addition 
+    9  history
+   10  cd ../../..
+   11  git clone www.github.com/ROCm/ROCmValidationSuite
+   12  git clone https://www.github.com/ROCm/ROCmValidationSuite
+   13  sudo apt install rocm-validation-suite
+   14  rvs --help
+   15  rvs -g
+   16  env | grep HSA
+   17  export HSA_OVERRIDE_GFX_VERSION=11.5.0
+   18  rvs -g
+   19  find ROCmValidationSuite/ -name "gst_single.conf"
+   20  more ROCmValidationSuite/rvs/conf/nv31/gst_single.conf 
+   21  rvs -C  ROCmValidationSuite/rvs/conf/gst_single.conf 
+   22  rvs -c ROCmValidationSuite/rvs/conf/gst_single.conf 
+   23  more /opt/rocm/lib/rocblas/library/TensileLibrary_lazy_gfx1100.dat
+   24  rvs -c ROCmValidationSuite/rvs/conf/gst_single.conf 
+   25  cp /opt/rocm/lib/rocblas/library/TensileLibrary_lazy_gfx1100.dat /opt/rocm/lib/rocblas/library/TensileLibrary_lazy_gfx1150.dat
+   26  rvs -c ROCmValidationSuite/rvs/conf/gst_single.conf 
+   27  export HSA_OVERRIDE_GFX_VERSION=11.0.0
+   28  rvs -c ROCmValidationSuite/rvs/conf/gst_single.conf 
+   29  rvs -c ROCmValidationSuite/rvs/conf/gst_single.conf SS
+   30  ls
+   31  cd introduction_to_hip/
+   32  ls
+   33  cd examples/01_vector_addition/
+   34  make
+   35  ./vector_addition 
+   36  history
+   37  export HSA_OVERRIDE_GFX_VERSION=11.5.0
+   38  ./vector_addition 
+   39  more Makefile 
+   40  cd ..
+   41  cd 02_vector_addition_error_check/
+   42  ls
+   43  more Makefile 
+   44  find . -type f -name "Makefile" -exec sed -i 's/--offload-arch=gfx90a/--offload-arch=gfx1150/g' {} +
+   45  cd ..
+   46  find . -type f -name "Makefile" -exec sed -i 's/--offload-arch=gfx90a/--offload-arch=gfx1150/g' {} +
+   47  cd 02_vector_addition_error_check/
+   48  ls
+   49  more Makefile 
+   50  make
+   51  ls
+   52  ./vector_addition 
+   53  cd ../03_vector_addition_timers/
+   54  ls
+   55  make
+   56  ./vector_addition 
+   57  cd ../
+   58  cd 04_stencil/
+   59  ls
+   60  more Makefile 
+   61  make
+   62  ./stencil 
+   63  cd ..
+   64  ls
+   65  vi graham_runall.sh
+   66  chmod a+x graham_runall.sh 
+   67  ./graham_runall.sh 
+   68  vi graham_runall.sh
+   69  ./graham_runall.sh 
+   70  vi graham_runall.sh
+   71  ./graham_runall.sh 
+   72  vi graham_runall.sh
+   73  ./graham_runall.sh 
+   74  ls
+   75  ls *
+   76  ./graham_runall.sh 
+   77  vi graham_runall.sh
+   78  ./graham_runall.sh 
+   79  vi graham_runall.sh
+   80  ./graham_runall.sh 
+   81  vi graham_runall.sh
+   82  ./graham_runall.sh 
+   83  vi graham_runall.sh
+   84  ./graham_runall.sh 
+   85  vi graham_runall.sh
+   86  ./graham_runall.sh 
+   87  vi graham_runall.sh
+   88  ls
+   89  vi graham_runall.sh
+   90  ./graham_runall.sh 
+   91  ls 13_concurrent_kernels_async_data/
+   92  pushd 13_concurrent_kernels_async_data/MM_kernels_data_streams/
+   93  make
+   94  ./matrix_multiply 
+   95  cd ../MM_kernels_streams/
+   96  make
+   97  ./matrix_multiply 
+   98  cd ../..
+   99  ls
+  100  history
+
