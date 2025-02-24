@@ -1,5 +1,31 @@
 # AIPC_Notes
 
+## From Clean Ubuntu 24.04 Image on PHX MiniForums AI PC
+
+```bash
+sudo apt update
+sudo apt upgrade
+sudo apt install git python3-pip python3-venv docker.io curl
+sudo snap install code --classic
+sudo snap install emacs --classic
+sudo reboot
+```
+```bash
+git config --global credential.helper store
+git clone https://github.com/schelleg/RyzenAI-Dockers
+python3 -m venv ryzers_venv
+source ryzers_venv/bin/activate
+python3 -m pip install RyzenAI-Dockers
+
+
+```
+
+```bash
+# remove all docker images
+docker image prune --all --force
+```
+
+
 ## From Clean Ubuntu 24.04 Image on STX MiniForums AI PC
 Setup Notes
 - Ubuntu 24.04, STX
