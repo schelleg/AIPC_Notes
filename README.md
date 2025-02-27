@@ -21,8 +21,9 @@ python3 -m pip install RyzenAI-Dockers/
 ```
 
 ```bash
-# remove all docker images
-docker image prune --all --force
+# remove all docker images/cache/containers
+
+docker system prune --all --force
 ```
 
 
