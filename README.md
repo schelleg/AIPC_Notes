@@ -4,8 +4,8 @@
 
 ```bash
 sudo apt update
-sudo apt upgrade
-sudo apt install git python3-pip python3-venv docker.io curl
+sudo apt -y upgrade
+sudo apt install -y git python3-pip python3-venv docker.io curl
 sudo snap install code --classic
 sudo snap install emacs --classic
 sudo reboot
