@@ -41,6 +41,8 @@ python3 -m pip install RyzenAI-Dockers/
 
 ```bash
 # remove all docker images/cache/containers
+docker pull rocm/pytorch:rocm6.3.3_ubuntu22.04_py3.10_pytorch_release_2.4.0
+docker pull rocm/pytorch:rocm6.3.3_ubuntu24.04_py3.12_pytorch_release_2.4.0
 
 docker system prune --all --force
 ```
