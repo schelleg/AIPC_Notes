@@ -8,6 +8,25 @@ sudo apt -y upgrade
 sudo apt install -y git python3-pip python3-venv docker.io curl
 sudo snap install code --classic
 sudo snap install emacs --classic
+
+uname -m | tee ryzers_check.log
+cat /etc/*release | tee ryzers_check.log  
+uname -srmv | tee ryzers_check.log 
+
+sudo apt install "linux-headers-$(uname -r)" "linux-modules-extra-$(uname -r)"
+sudo apt install python3-setuptools python3-wheel
+sudo usermod -a -G video,render $LOGNAME
+
+RULES_FILE="/etc/udev/rules.d/70-amdgpu.rules"
+
+# Create or overwrite the file with the required rules
+echo 'KERNEL=="kfd", MODE="0666"' | sudo tee "$RULES_FILE" > /dev/null
+echo 'SUBSYSTEM=="drm", KERNEL=="renderD*", MODE="0666"' | sudo tee -a "$RULES_FILE" > /dev/null
+
+# Reload udev rules
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+
 sudo reboot
 ```
 ```bash
