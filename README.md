@@ -53,7 +53,10 @@ docker pull rocm/pytorch:rocm6.3.3_ubuntu24.04_py3.12_pytorch_release_2.4.0
 
 docker system prune --all --force
 ```
+## References
 
+#### reinstalling pytorch 
+- https://rocm.docs.amd.com/en/docs-5.5.1/how_to/pytorch_install/pytorch_install.html#../../deploy/linux/install.md
 
 ## From Clean Ubuntu 24.04 Image on STX MiniForums AI PC
 Setup Notes
