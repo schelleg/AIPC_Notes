@@ -38,6 +38,13 @@ python3 -m pip install RyzenAI-Dockers/
 
 
 ```
+```bash
+/opt/rocm-*/bin/rocminfo  | grep -i memory
+
+sudo apt install clinfo
+clinfo | grep "Global memory"
+cat /sys/class/drm/card1/device/mem_info_vram_used
+``
 
 ```bash
 # remove all docker images/cache/containers
