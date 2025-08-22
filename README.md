@@ -40,10 +40,10 @@ sudo reboot
 
 ```bash
 git config --global credential.helper store
-git clone https://github.com/schelleg/RyzenAI-Dockers
+git clone https://github.com/AMDResearch/Ryzers
 python3 -m venv ryzers_venv
 source ryzers_venv/bin/activate
-python3 -m pip install RyzenAI-Dockers/
+python3 -m pip install Ryzers/
 ```
 
 ```bash
