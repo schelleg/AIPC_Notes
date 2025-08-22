@@ -1,5 +1,13 @@
 # AIPC_Notes
 
+## Boot from USB
+```
+- burn USB with ubuntu 24.02.3
+- reboot and hit "DEL" quickly
+- boot options -> drag USB stick above HDD
+- follow links
+```
+
 ## From Clean Ubuntu 24.04 Image on PHX MiniForums AI PC
 
 ```bash
